@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xCG-ja-KEp" customClass="SLMentorAnswerHeaderView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDh-gg-Blq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ki-9z-pIk">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.85490196080000003" green="0.87058823529999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Ier-iP-idu"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYH-YT-UzV">
+                            <rect key="frame" x="8" y="0.0" width="108.5" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="Oan-pY-SZY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="15"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3e-K9-DMJ">
+                            <rect key="frame" x="270" y="0.0" width="50" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="e3A-uW-tYk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
+                            <state key="normal" title="More">
+                                <color key="titleColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moreAction:" destination="xCG-ja-KEp" eventType="touchUpInside" id="uRE-w7-1cG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="5Ki-9z-pIk" secondAttribute="trailing" id="Arc-sS-jO7"/>
+                        <constraint firstAttribute="trailing" secondItem="o3e-K9-DMJ" secondAttribute="trailing" id="BRW-oT-7Jx"/>
+                        <constraint firstItem="o3e-K9-DMJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MYH-YT-UzV" secondAttribute="trailing" constant="10" id="H4w-DS-FzT"/>
+                        <constraint firstItem="MYH-YT-UzV" firstAttribute="leading" secondItem="bDh-gg-Blq" secondAttribute="leading" constant="8" id="K8G-69-gtA"/>
+                        <constraint firstItem="MYH-YT-UzV" firstAttribute="top" secondItem="bDh-gg-Blq" secondAttribute="top" id="SnH-rF-Phg"/>
+                        <constraint firstItem="o3e-K9-DMJ" firstAttribute="top" secondItem="bDh-gg-Blq" secondAttribute="top" id="cPK-8e-OlY"/>
+                        <constraint firstItem="5Ki-9z-pIk" firstAttribute="top" secondItem="bDh-gg-Blq" secondAttribute="top" id="em3-fE-Z8D"/>
+                        <constraint firstItem="5Ki-9z-pIk" firstAttribute="leading" secondItem="bDh-gg-Blq" secondAttribute="leading" id="sTt-Ht-a4q"/>
+                        <constraint firstAttribute="bottom" secondItem="o3e-K9-DMJ" secondAttribute="bottom" id="vZb-bD-xMR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bDh-gg-Blq" secondAttribute="trailing" id="50y-BW-Pdw"/>
+                <constraint firstItem="bDh-gg-Blq" firstAttribute="top" secondItem="xCG-ja-KEp" secondAttribute="top" id="GJk-rP-9wY"/>
+                <constraint firstAttribute="bottom" secondItem="bDh-gg-Blq" secondAttribute="bottom" id="UrH-GU-SF2"/>
+                <constraint firstItem="bDh-gg-Blq" firstAttribute="leading" secondItem="xCG-ja-KEp" secondAttribute="leading" id="ekN-Ej-eNy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreButton" destination="o3e-K9-DMJ" id="uiR-rq-u3Z"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="213.5"/>
+        </view>
+    </objects>
+</document>

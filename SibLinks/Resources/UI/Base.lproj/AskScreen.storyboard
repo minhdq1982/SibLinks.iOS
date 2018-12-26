@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kSj-SG-T4c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Ask Camera View Controller-->
+        <scene sceneID="xYS-JF-5wH">
+            <objects>
+                <viewController storyboardIdentifier="SLAskCameraViewControllerID" id="kSj-SG-T4c" customClass="SLAskCameraViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8b-Wx-Nf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="k8G-S5-XIM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRf-C5-IjD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd6-IH-mQB">
+                                <rect key="frame" x="5" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5kR-8o-aiE"/>
+                                    <constraint firstAttribute="width" constant="40" id="Tzg-DC-9Q4"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kY-26-bAe">
+                                <rect key="frame" x="15" y="540" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="PJF-66-B7q"/>
+                                    <constraint firstAttribute="height" constant="40" id="gWe-IW-xSi"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="CameraRoll"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G73-S3-dAH">
+                                <rect key="frame" x="270" y="530" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZrW-sC-dLz"/>
+                                    <constraint firstAttribute="width" constant="60" id="mLl-Hb-u5o"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="CameraTakePhoto"/>
+                                <state key="highlighted" backgroundImage="CameraTakePhotoHighlighted"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1b-FL-D2M">
+                                <rect key="frame" x="545" y="540" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="fD1-BB-l1t"/>
+                                    <constraint firstAttribute="height" constant="40" id="ymN-pW-pIb"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="CameraFlashOff"/>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-ay-T4i">
+                                <rect key="frame" x="3" y="8" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="k9C-DB-orJ"/>
+                                    <constraint firstAttribute="width" constant="44" id="rIs-iZ-1Vu"/>
+                                </constraints>
+                                <state key="normal" image="CancelIcon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0K-VK-1m1">
+                                <rect key="frame" x="545" y="10" width="50" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2Ut-95-MK6"/>
+                                    <constraint firstAttribute="height" constant="44" id="5LZ-bV-Ib9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="  Skip"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1kY-26-bAe" firstAttribute="leading" secondItem="qRf-C5-IjD" secondAttribute="leading" constant="15" id="2q6-Vv-Yla"/>
+                            <constraint firstItem="a1b-FL-D2M" firstAttribute="centerY" secondItem="G73-S3-dAH" secondAttribute="centerY" id="31X-WJ-jrn"/>
+                            <constraint firstItem="u0K-VK-1m1" firstAttribute="top" secondItem="qRf-C5-IjD" secondAttribute="top" constant="10" id="BQR-AT-bEq"/>
+                            <constraint firstItem="G73-S3-dAH" firstAttribute="centerX" secondItem="qRf-C5-IjD" secondAttribute="centerX" id="FCs-au-dtN"/>
+                            <constraint firstItem="NPH-ay-T4i" firstAttribute="centerY" secondItem="gd6-IH-mQB" secondAttribute="centerY" id="G39-Yw-QLP"/>
+                            <constraint firstItem="gd6-IH-mQB" firstAttribute="leading" secondItem="qRf-C5-IjD" secondAttribute="leading" constant="5" id="M7o-4b-Zze"/>
+                            <constraint firstItem="gd6-IH-mQB" firstAttribute="top" secondItem="qRf-C5-IjD" secondAttribute="top" constant="10" id="RbC-bC-0ct"/>
+                            <constraint firstItem="NPH-ay-T4i" firstAttribute="centerX" secondItem="gd6-IH-mQB" secondAttribute="centerX" id="SuM-sl-EwT"/>
+                            <constraint firstItem="k8G-S5-XIM" firstAttribute="top" secondItem="G73-S3-dAH" secondAttribute="bottom" constant="10" id="cTX-wu-aPt"/>
+                            <constraint firstItem="1kY-26-bAe" firstAttribute="centerY" secondItem="G73-S3-dAH" secondAttribute="centerY" id="iMk-mx-98O"/>
+                            <constraint firstAttribute="trailing" secondItem="a1b-FL-D2M" secondAttribute="trailing" constant="15" id="ol6-yb-Fo7"/>
+                            <constraint firstAttribute="trailing" secondItem="u0K-VK-1m1" secondAttribute="trailing" constant="5" id="wdZ-BB-HNX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="gd6-IH-mQB" id="s9T-qK-W77"/>
+                        <outlet property="backButtonIcon" destination="NPH-ay-T4i" id="F9v-xG-vYd"/>
+                        <outlet property="cameraFlashButton" destination="a1b-FL-D2M" id="Bzn-pN-ke2"/>
+                        <outlet property="cameraRollButton" destination="1kY-26-bAe" id="Aki-bZ-XcY"/>
+                        <outlet property="cameraTakeAPhotoButton" destination="G73-S3-dAH" id="ifU-xI-Wby"/>
+                        <outlet property="skipButton" destination="u0K-VK-1m1" id="A78-ab-icz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gef-qI-AHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326.5" y="328.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CameraFlashOff" width="46" height="46"/>
+        <image name="CameraRoll" width="46" height="46"/>
+        <image name="CameraTakePhoto" width="80" height="80"/>
+        <image name="CameraTakePhotoHighlighted" width="80" height="80"/>
+        <image name="CancelIcon" width="12" height="12"/>
+    </resources>
+</document>

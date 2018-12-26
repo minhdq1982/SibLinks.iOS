@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gz6-1N-GMi" customClass="SLVideoPlaylistDetailHeaderView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KD-Dg-Ly2" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW9-yK-ha3">
+                            <rect key="frame" x="15" y="5" width="290" height="19"/>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Janle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqR-QT-Rs6">
+                            <rect key="frame" x="15" y="29" width="235" height="17"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vqR-QT-Rs6" secondAttribute="trailing" constant="70" id="1S8-Ei-izs"/>
+                        <constraint firstItem="iW9-yK-ha3" firstAttribute="top" secondItem="3KD-Dg-Ly2" secondAttribute="top" constant="5" id="HCL-0d-FMz"/>
+                        <constraint firstAttribute="trailing" secondItem="iW9-yK-ha3" secondAttribute="trailing" constant="15" id="LL7-ZP-Yap"/>
+                        <constraint firstItem="vqR-QT-Rs6" firstAttribute="top" secondItem="iW9-yK-ha3" secondAttribute="bottom" constant="5" id="NSs-ie-fq2"/>
+                        <constraint firstItem="iW9-yK-ha3" firstAttribute="leading" secondItem="3KD-Dg-Ly2" secondAttribute="leading" constant="15" id="a1d-AR-XTU"/>
+                        <constraint firstItem="vqR-QT-Rs6" firstAttribute="leading" secondItem="iW9-yK-ha3" secondAttribute="leading" id="hXr-fl-UPV"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vqR-QT-Rs6" secondAttribute="bottom" constant="8" id="o2M-xa-QnV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-q7-Dtd">
+                    <rect key="frame" x="0.0" y="68" width="320" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-om-SUE">
+                            <rect key="frame" x="15" y="6.5" width="235" height="18"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aye-om-SUE" secondAttribute="trailing" constant="70" id="65M-Kf-xIv"/>
+                        <constraint firstItem="aye-om-SUE" firstAttribute="leading" secondItem="nfU-q7-Dtd" secondAttribute="leading" constant="15" id="GS8-PH-Wx1"/>
+                        <constraint firstItem="aye-om-SUE" firstAttribute="centerY" secondItem="nfU-q7-Dtd" secondAttribute="centerY" id="Nms-kG-tkF"/>
+                        <constraint firstAttribute="height" constant="32" id="PlD-9a-bX4"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qS-sH-pqY" customClass="AnimatableButton" customModule="IBAnimatable">
+                    <rect key="frame" x="261" y="46" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="IDh-sB-Kad"/>
+                        <constraint firstAttribute="height" constant="44" id="l8Z-Zk-Cg4"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="PlayIcon"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="startPlaylist:" destination="gz6-1N-GMi" eventType="touchUpInside" id="oMl-wj-l9z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8qS-sH-pqY" secondAttribute="bottom" constant="10" id="0C6-b9-xaM"/>
+                <constraint firstItem="3KD-Dg-Ly2" firstAttribute="leading" secondItem="gz6-1N-GMi" secondAttribute="leading" id="2aa-pa-e1B"/>
+                <constraint firstAttribute="trailing" secondItem="nfU-q7-Dtd" secondAttribute="trailing" id="Gf9-Db-RGh"/>
+                <constraint firstAttribute="trailing" secondItem="3KD-Dg-Ly2" secondAttribute="trailing" id="VTm-V5-XdY"/>
+                <constraint firstItem="3KD-Dg-Ly2" firstAttribute="top" secondItem="gz6-1N-GMi" secondAttribute="top" id="W68-Ap-r2A"/>
+                <constraint firstAttribute="bottom" secondItem="nfU-q7-Dtd" secondAttribute="bottom" id="YZT-1c-604"/>
+                <constraint firstAttribute="trailing" secondItem="8qS-sH-pqY" secondAttribute="trailing" constant="15" id="kcI-Yd-ZSl"/>
+                <constraint firstItem="nfU-q7-Dtd" firstAttribute="top" secondItem="3KD-Dg-Ly2" secondAttribute="bottom" id="sNl-by-mrh"/>
+                <constraint firstItem="nfU-q7-Dtd" firstAttribute="leading" secondItem="gz6-1N-GMi" secondAttribute="leading" id="vRA-WQ-hHY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mentorNameLabel" destination="vqR-QT-Rs6" id="d2m-Qs-p8n"/>
+                <outlet property="playlistNameLabel" destination="iW9-yK-ha3" id="obS-JM-7lx"/>
+                <outlet property="totalVideoLabel" destination="aye-om-SUE" id="r0E-bK-GXT"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="208"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PlayIcon" width="25" height="25"/>
+    </resources>
+</document>

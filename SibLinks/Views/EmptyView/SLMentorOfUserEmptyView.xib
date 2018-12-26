@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HkF-rl-y2y" customClass="SLMentorOfUserEmptyView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opps, you do not subscribe any mentors." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFS-2s-oHF">
+                    <rect key="frame" x="8" y="270" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Qef-jK-YC8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15.5"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoq-mD-nTJ">
+                    <rect key="frame" x="8" y="299" width="584" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Find your ">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="16" name="Lato-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="mentor">
+                            <attributes>
+                                <color key="NSColor" red="0.95294117647058818" green="0.76470588235294112" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="16" name="Lato-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" right row!">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="16" name="Lato-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xoq-mD-nTJ" firstAttribute="width" secondItem="SFS-2s-oHF" secondAttribute="width" id="8tO-E7-WNp"/>
+                <constraint firstItem="Xoq-mD-nTJ" firstAttribute="centerX" secondItem="SFS-2s-oHF" secondAttribute="centerX" id="LzC-Yl-GZh"/>
+                <constraint firstItem="SFS-2s-oHF" firstAttribute="centerY" secondItem="HkF-rl-y2y" secondAttribute="centerY" constant="-20" id="VPg-pY-6xr"/>
+                <constraint firstItem="SFS-2s-oHF" firstAttribute="leading" secondItem="HkF-rl-y2y" secondAttribute="leading" constant="8" id="iBB-7b-wSD"/>
+                <constraint firstItem="Xoq-mD-nTJ" firstAttribute="top" secondItem="SFS-2s-oHF" secondAttribute="bottom" constant="8" id="imL-5j-iUW"/>
+                <constraint firstItem="Xoq-mD-nTJ" firstAttribute="height" secondItem="SFS-2s-oHF" secondAttribute="height" id="okN-ne-MYm"/>
+                <constraint firstItem="SFS-2s-oHF" firstAttribute="centerX" secondItem="HkF-rl-y2y" secondAttribute="centerX" id="znT-7w-e2s"/>
+            </constraints>
+            <connections>
+                <outlet property="mentorLabel" destination="Xoq-mD-nTJ" id="iEK-Ss-YAi"/>
+            </connections>
+            <point key="canvasLocation" x="155" y="169"/>
+        </view>
+    </objects>
+</document>

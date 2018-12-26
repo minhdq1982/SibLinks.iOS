@@ -1,0 +1,22 @@
+/*
+  Localization.strings
+  SibLinks
+
+  Created by Anh Nguyen on 9/12/16.
+  Copyright © 2016 SibLinks Inc. All rights reserved.
+*/
+
+"Home" = "Home";
+"Subscriptions" = "Subscriptions";
+"Account" = "Account";
+"Videos" = "Videos";
+"Ask" = "Ask";
+"Admission" = "Admission";
+"College Admission" = "College Admission";
+"Mentors" = "Mentors";
+"My Profile" = "My Profile";
+"Alerts" = "Alerts";
+"Settings" = "Settings";
+"Log Out" = "Log Out";
+"History" = "History";
+"Favorites" = "Favorites";

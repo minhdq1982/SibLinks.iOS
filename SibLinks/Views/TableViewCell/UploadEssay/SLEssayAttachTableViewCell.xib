@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLEssayAttachTableViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="SLEssayAttachTableViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqy-AP-m5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filename.pdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meZ-OF-pK2">
+                                <rect key="frame" x="20" y="18" width="68.5" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="LOY-jL-ULD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-upload-successful" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-QZ-Iae">
+                                <rect key="frame" x="98.5" y="17.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="GGq-W6-2hG"/>
+                                    <constraint firstAttribute="height" constant="15" id="wh6-dq-muK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0kb" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg6-HM-q6N">
+                                <rect key="frame" x="245" y="18" width="20" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="I2x-ck-vLp"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Vsj-dc-lMD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xND-dB-kkS">
+                                <rect key="frame" x="265" y="5" width="35" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nIG-cl-UOI"/>
+                                    <constraint firstAttribute="width" constant="35" id="xop-pU-TQg"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="0.30588235289999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="DeleteIcon">
+                                    <color key="titleColor" red="1" green="0.30588235294117649" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAttachFileAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7bi-s6-ijO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-YF-H98">
+                                <rect key="frame" x="20" y="48.5" width="280" height="1"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="5Le-0l-BvY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="k6i-YF-H98" secondAttribute="trailing" constant="20" id="58T-ta-Gf3"/>
+                            <constraint firstItem="meZ-OF-pK2" firstAttribute="leading" secondItem="k6i-YF-H98" secondAttribute="leading" id="9N1-5z-bqC"/>
+                            <constraint firstItem="xND-dB-kkS" firstAttribute="centerY" secondItem="aqy-AP-m5O" secondAttribute="centerY" id="AiB-hU-ZNU"/>
+                            <constraint firstItem="xND-dB-kkS" firstAttribute="trailing" secondItem="k6i-YF-H98" secondAttribute="trailing" id="Npp-fy-uY4"/>
+                            <constraint firstItem="mqm-QZ-Iae" firstAttribute="leading" secondItem="meZ-OF-pK2" secondAttribute="trailing" constant="10" id="PtH-WV-dkH"/>
+                            <constraint firstItem="Rg6-HM-q6N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mqm-QZ-Iae" secondAttribute="trailing" constant="20" id="SZg-Tg-B0r"/>
+                            <constraint firstItem="xND-dB-kkS" firstAttribute="leading" secondItem="Rg6-HM-q6N" secondAttribute="trailing" id="ZQc-QR-s8l"/>
+                            <constraint firstItem="Rg6-HM-q6N" firstAttribute="centerY" secondItem="xND-dB-kkS" secondAttribute="centerY" id="bTy-Oe-1xH"/>
+                            <constraint firstItem="k6i-YF-H98" firstAttribute="leading" secondItem="aqy-AP-m5O" secondAttribute="leading" constant="20" id="kar-Aw-GFc"/>
+                            <constraint firstItem="meZ-OF-pK2" firstAttribute="centerY" secondItem="xND-dB-kkS" secondAttribute="centerY" id="laX-y6-Waa"/>
+                            <constraint firstItem="mqm-QZ-Iae" firstAttribute="centerY" secondItem="xND-dB-kkS" secondAttribute="centerY" id="mLG-Us-SEX"/>
+                            <constraint firstAttribute="bottom" secondItem="k6i-YF-H98" secondAttribute="bottom" id="uLk-pM-29y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aqy-AP-m5O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0Tk-KA-U6a"/>
+                    <constraint firstAttribute="bottom" secondItem="aqy-AP-m5O" secondAttribute="bottom" id="WGp-aw-aPh"/>
+                    <constraint firstItem="aqy-AP-m5O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="csc-Zu-Ozm"/>
+                    <constraint firstAttribute="trailing" secondItem="aqy-AP-m5O" secondAttribute="trailing" id="rnw-xY-jan"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10000" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="fileNameLabel" destination="meZ-OF-pK2" id="AbO-nq-aOX"/>
+                <outlet property="fileSizeLabel" destination="Rg6-HM-q6N" id="Mjh-q1-Xhs"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="202"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DeleteIcon" width="25" height="25"/>
+        <image name="icon-upload-successful" width="16" height="16"/>
+    </resources>
+</document>

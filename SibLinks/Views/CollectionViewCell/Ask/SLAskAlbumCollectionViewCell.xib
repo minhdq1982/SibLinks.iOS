@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SLAskAlbumCollectionViewCellID" id="gTV-IL-0wX" customClass="SLAskAlbumCollectionViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="92"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="92"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-QF-2cQ">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="92"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fUf-QF-2cQ" secondAttribute="bottom" id="DLX-i8-EqX"/>
+                <constraint firstItem="fUf-QF-2cQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tcy-x7-7C6"/>
+                <constraint firstAttribute="trailing" secondItem="fUf-QF-2cQ" secondAttribute="trailing" id="of1-8M-QyS"/>
+                <constraint firstItem="fUf-QF-2cQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wc2-6e-Lrw"/>
+            </constraints>
+            <size key="customSize" width="164" height="92"/>
+            <connections>
+                <outlet property="questionImageView" destination="fUf-QF-2cQ" id="y7d-13-iWE"/>
+            </connections>
+            <point key="canvasLocation" x="187" y="333"/>
+        </collectionViewCell>
+    </objects>
+</document>

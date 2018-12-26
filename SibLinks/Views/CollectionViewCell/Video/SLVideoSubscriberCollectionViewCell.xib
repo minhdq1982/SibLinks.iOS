@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SLVideoSubscriberCollectionViewCellID" id="9MM-MZ-xjv" customClass="SLVideoSubscriberCollectionViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kQx-LZ-B9M" customClass="AnimatableImageView" customModule="IBAnimatable">
+                        <rect key="frame" x="11" y="0.0" width="39" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kQx-LZ-B9M" secondAttribute="height" multiplier="1:1" id="ECt-cX-Jhe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                <color key="value" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q34-Ad-Dek">
+                        <rect key="frame" x="0.0" y="39" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="oPy-CX-asp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kQx-LZ-B9M" firstAttribute="centerX" secondItem="9MM-MZ-xjv" secondAttribute="centerX" id="76w-vB-8ia"/>
+                <constraint firstItem="Q34-Ad-Dek" firstAttribute="centerX" secondItem="9MM-MZ-xjv" secondAttribute="centerX" id="DVW-nI-FEN"/>
+                <constraint firstItem="Q34-Ad-Dek" firstAttribute="leading" secondItem="9MM-MZ-xjv" secondAttribute="leading" id="KF7-LJ-HLM"/>
+                <constraint firstItem="Q34-Ad-Dek" firstAttribute="top" secondItem="kQx-LZ-B9M" secondAttribute="bottom" id="tFe-9T-eoe"/>
+                <constraint firstItem="kQx-LZ-B9M" firstAttribute="top" secondItem="9MM-MZ-xjv" secondAttribute="top" id="urb-oR-zQb"/>
+                <constraint firstAttribute="bottom" secondItem="Q34-Ad-Dek" secondAttribute="bottom" id="zht-4C-7pk"/>
+            </constraints>
+            <size key="customSize" width="139" height="125"/>
+            <connections>
+                <outlet property="avatarImageView" destination="kQx-LZ-B9M" id="Swf-uc-M9n"/>
+                <outlet property="mentorNameLabel" destination="Q34-Ad-Dek" id="sgV-el-Mtx"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="341"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mBK-wW-lvv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="pRg-tQ-X5b">
+            <objects>
+                <viewController storyboardIdentifier="SLSearchViewController" id="MIc-m8-UXr" customClass="SLSearchViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eba-XZ-AJV"/>
+                        <viewControllerLayoutGuide type="bottom" id="JPK-Up-FAf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zhb-Fd-6h8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJC-7r-CBs">
+                                <connections>
+                                    <segue destination="QyI-R2-y7f" kind="embed" id="Tde-a5-tGo"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KJC-7r-CBs" secondAttribute="trailing" id="PnB-2L-eb6"/>
+                            <constraint firstItem="JPK-Up-FAf" firstAttribute="top" secondItem="KJC-7r-CBs" secondAttribute="bottom" id="QUa-hn-BBw"/>
+                            <constraint firstItem="KJC-7r-CBs" firstAttribute="top" secondItem="eba-XZ-AJV" secondAttribute="bottom" id="SbE-zj-wpD"/>
+                            <constraint firstItem="KJC-7r-CBs" firstAttribute="leading" secondItem="Zhb-Fd-6h8" secondAttribute="leading" id="zkS-HZ-eJd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FGh-1N-ieR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wA-je-hxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="304"/>
+        </scene>
+        <!--Search Playlist View Controller-->
+        <scene sceneID="ceZ-PX-ipk">
+            <objects>
+                <tableViewController storyboardIdentifier="SLSearchPlaylistViewController" id="nUX-x6-1Lp" customClass="SLSearchPlaylistViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GQs-Rc-tEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="nUX-x6-1Lp" id="qwR-hi-GZ9"/>
+                            <outlet property="delegate" destination="nUX-x6-1Lp" id="hCH-MZ-MSR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARR-AI-hiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="1099"/>
+        </scene>
+        <!--Search Mentor View Controller-->
+        <scene sceneID="IFo-th-e15">
+            <objects>
+                <tableViewController storyboardIdentifier="SLSearchMentorViewController" id="18e-ff-J92" customClass="SLSearchMentorViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jnR-ID-zFh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="18e-ff-J92" id="lTw-PJ-qsC"/>
+                            <outlet property="delegate" destination="18e-ff-J92" id="igX-ov-HOc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIT-AR-gwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="1099"/>
+        </scene>
+        <!--Search Video View Controller-->
+        <scene sceneID="QiS-Nt-lH4">
+            <objects>
+                <tableViewController storyboardIdentifier="SLSearchVideoViewController" id="Kz5-ol-V24" customClass="SLSearchVideoViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TX8-br-Ynz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Kz5-ol-V24" id="MCd-VX-8Y6"/>
+                            <outlet property="delegate" destination="Kz5-ol-V24" id="fKy-V3-Hfu"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCr-iv-xAP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="1099"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9AO-Wb-ksS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mBK-wW-lvv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WAl-zG-q52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MIc-m8-UXr" kind="relationship" relationship="rootViewController" id="c3a-8D-RcT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2i-33-Lz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="304"/>
+        </scene>
+        <!--Paging Menu Controller-->
+        <scene sceneID="Jeu-Kx-J3M">
+            <objects>
+                <viewController id="QyI-R2-y7f" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UXf-oc-3Gu"/>
+                        <viewControllerLayoutGuide type="bottom" id="NMT-Aa-7sg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kfb-N2-9Pb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0S-Bz-hU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="337"/>
+        </scene>
+    </scenes>
+</document>

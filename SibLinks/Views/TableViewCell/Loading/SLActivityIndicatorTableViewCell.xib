@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLTableViewCellNextPage" id="VaV-v8-tLL" customClass="SLActivityIndicatorTableViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VaV-v8-tLL" id="zaG-vX-VaJ">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SZW-0W-3lx"/>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SZW-0W-3lx" firstAttribute="centerY" secondItem="zaG-vX-VaJ" secondAttribute="centerY" id="UBH-Ik-zXH"/>
+                    <constraint firstItem="SZW-0W-3lx" firstAttribute="centerX" secondItem="zaG-vX-VaJ" secondAttribute="centerX" id="ubz-en-GOt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="indicatorView" destination="SZW-0W-3lx" id="Fpm-xO-UAh"/>
+            </connections>
+            <point key="canvasLocation" x="118" y="390"/>
+        </tableViewCell>
+    </objects>
+</document>

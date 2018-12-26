@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SLLeftMenuTableViewCellID" rowHeight="60" id="sls-AE-fNb" customClass="SLLeftMenuTableViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sls-AE-fNb" id="yEd-zQ-biV">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lr-K1-NMi">
+                        <rect key="frame" x="28" y="9" width="41" height="41"/>
+                        <color key="tintColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3lr-K1-NMi" secondAttribute="height" multiplier="1:1" id="MLc-7q-zpG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKX-gN-Uhw">
+                        <rect key="frame" x="81" y="0.0" width="231" height="59"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="3lr-K1-NMi" firstAttribute="leading" secondItem="yEd-zQ-biV" secondAttribute="leadingMargin" constant="20" id="19X-cG-Tsk"/>
+                    <constraint firstItem="SKX-gN-Uhw" firstAttribute="height" secondItem="yEd-zQ-biV" secondAttribute="height" id="3xl-58-mVL"/>
+                    <constraint firstItem="3lr-K1-NMi" firstAttribute="centerY" secondItem="yEd-zQ-biV" secondAttribute="centerY" id="8gI-2y-gx0"/>
+                    <constraint firstItem="SKX-gN-Uhw" firstAttribute="leading" secondItem="3lr-K1-NMi" secondAttribute="trailing" constant="12" id="C1c-GW-TL0"/>
+                    <constraint firstItem="SKX-gN-Uhw" firstAttribute="top" secondItem="yEd-zQ-biV" secondAttribute="topMargin" constant="-8" id="lhm-WN-Y1l"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SKX-gN-Uhw" secondAttribute="trailing" id="n1j-Yc-bQR"/>
+                    <constraint firstItem="3lr-K1-NMi" firstAttribute="top" secondItem="yEd-zQ-biV" secondAttribute="topMargin" constant="1" id="tXQ-gj-oML"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="iconImageView" destination="3lr-K1-NMi" id="0qw-Hp-p4R"/>
+                <outlet property="titleLabel" destination="SKX-gN-Uhw" id="sqK-xH-62Q"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="354"/>
+        </tableViewCell>
+    </objects>
+</document>

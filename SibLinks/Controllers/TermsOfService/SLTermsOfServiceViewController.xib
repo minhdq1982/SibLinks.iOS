@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLTermsOfServiceViewController" customModule="SibLinks" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="0ec-OA-hlr" id="pqp-Gv-TKJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ec-OA-hlr">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDW-Pu-BaV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY2-Ae-fxp">
+                            <rect key="frame" x="0.0" y="24" width="75" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="I4u-aV-8VS"/>
+                                <constraint firstAttribute="height" constant="40" id="rsy-Pd-GS8"/>
+                            </constraints>
+                            <state key="normal" image="fake-back-icon"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="4bC-My-BKw"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sA-Vl-qyo">
+                            <rect key="frame" x="130" y="34.5" width="116.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="16"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="EY2-Ae-fxp" firstAttribute="leading" secondItem="YDW-Pu-BaV" secondAttribute="leading" id="02G-xG-rj6"/>
+                        <constraint firstItem="0sA-Vl-qyo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EY2-Ae-fxp" secondAttribute="trailing" constant="20" id="DBb-SC-RmG"/>
+                        <constraint firstItem="0sA-Vl-qyo" firstAttribute="centerX" secondItem="YDW-Pu-BaV" secondAttribute="centerX" id="Ob9-pK-7Ka"/>
+                        <constraint firstItem="0sA-Vl-qyo" firstAttribute="centerY" secondItem="EY2-Ae-fxp" secondAttribute="centerY" id="Vx7-k6-9hs"/>
+                        <constraint firstAttribute="height" constant="64" id="hdF-ce-Dmv"/>
+                        <constraint firstAttribute="bottom" secondItem="EY2-Ae-fxp" secondAttribute="bottom" id="odG-M2-n5n"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0ec-OA-hlr" secondAttribute="trailing" id="PEo-PL-tOp"/>
+                <constraint firstItem="0ec-OA-hlr" firstAttribute="top" secondItem="YDW-Pu-BaV" secondAttribute="bottom" id="Y9O-kt-2Fb"/>
+                <constraint firstItem="YDW-Pu-BaV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c25-1s-FeQ"/>
+                <constraint firstAttribute="trailing" secondItem="YDW-Pu-BaV" secondAttribute="trailing" id="cXR-cg-imv"/>
+                <constraint firstItem="YDW-Pu-BaV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kwv-Ln-mtk"/>
+                <constraint firstItem="0ec-OA-hlr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="met-TD-gvO"/>
+                <constraint firstAttribute="bottom" secondItem="0ec-OA-hlr" secondAttribute="bottom" id="o0w-WD-iOg"/>
+            </constraints>
+            <point key="canvasLocation" x="41.5" y="122.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fake-back-icon" width="49" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Az5-CO-Yut" customClass="SLErrorView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gja-qF-sSY">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNT-Cf-gMd">
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to reload" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwW-6L-xsT">
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nNT-Cf-gMd" firstAttribute="leading" secondItem="Gja-qF-sSY" secondAttribute="leading" constant="10" id="4vc-Pw-AE1"/>
+                        <constraint firstAttribute="trailing" secondItem="nNT-Cf-gMd" secondAttribute="trailing" constant="10" id="EVG-W9-qWw"/>
+                        <constraint firstItem="FwW-6L-xsT" firstAttribute="top" secondItem="nNT-Cf-gMd" secondAttribute="bottom" constant="2" id="PSx-lS-tl2"/>
+                        <constraint firstAttribute="bottom" secondItem="FwW-6L-xsT" secondAttribute="bottom" constant="5" id="R2Z-KN-vz6"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FwW-6L-xsT" secondAttribute="trailing" constant="10" id="RgV-3G-lzA"/>
+                        <constraint firstItem="nNT-Cf-gMd" firstAttribute="top" secondItem="Gja-qF-sSY" secondAttribute="top" constant="5" id="jdO-rk-CPP"/>
+                        <constraint firstItem="nNT-Cf-gMd" firstAttribute="centerX" secondItem="Gja-qF-sSY" secondAttribute="centerX" id="m1m-dH-nt3"/>
+                        <constraint firstItem="FwW-6L-xsT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Gja-qF-sSY" secondAttribute="leading" constant="10" id="txe-26-jxw"/>
+                        <constraint firstItem="FwW-6L-xsT" firstAttribute="centerX" secondItem="Gja-qF-sSY" secondAttribute="centerX" id="yQY-e4-JVg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gja-qF-sSY" firstAttribute="centerY" secondItem="Az5-CO-Yut" secondAttribute="centerY" id="Ljb-CH-Uc4"/>
+                <constraint firstItem="Gja-qF-sSY" firstAttribute="centerX" secondItem="Az5-CO-Yut" secondAttribute="centerX" id="Sda-qN-I8X"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gja-qF-sSY" secondAttribute="trailing" constant="20" id="nNT-Zt-rU0"/>
+                <constraint firstItem="Gja-qF-sSY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Az5-CO-Yut" secondAttribute="leading" constant="20" id="qIm-kk-Mmc"/>
+            </constraints>
+            <point key="canvasLocation" x="93" y="173"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SLSubscribedMentorsCollectionViewCell" id="gTV-IL-0wX" customClass="SLSubscribedMentorsCollectionViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F8x-Bs-BfS" customClass="AnimatableImageView" customModule="IBAnimatable">
+                        <rect key="frame" x="15" y="8" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="qFU-x1-Bbd"/>
+                            <constraint firstAttribute="height" constant="60" id="s8S-C0-eQZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Janle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGx-ET-vUU">
+                        <rect key="frame" x="8" y="68" width="74" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="urx-HN-OlU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KdM-zM-Aq3" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="1" y="90" width="88" height="18"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KdM-zM-Aq3" secondAttribute="bottom" constant="2" id="8bB-Gt-erK"/>
+                <constraint firstItem="F8x-Bs-BfS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Gmp-NG-e9I"/>
+                <constraint firstItem="qGx-ET-vUU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="KnZ-b1-uDh"/>
+                <constraint firstItem="qGx-ET-vUU" firstAttribute="top" secondItem="F8x-Bs-BfS" secondAttribute="bottom" id="OpQ-w5-m2T"/>
+                <constraint firstItem="F8x-Bs-BfS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Ow2-ru-PqP"/>
+                <constraint firstItem="KdM-zM-Aq3" firstAttribute="top" secondItem="qGx-ET-vUU" secondAttribute="bottom" id="RAR-Qs-qCa"/>
+                <constraint firstItem="KdM-zM-Aq3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="TDV-qV-g0Y"/>
+                <constraint firstItem="qGx-ET-vUU" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fhm-XA-B9l"/>
+                <constraint firstItem="KdM-zM-Aq3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vnR-Qd-K00"/>
+            </constraints>
+            <size key="customSize" width="205" height="157"/>
+            <connections>
+                <outlet property="avatarImageView" destination="F8x-Bs-BfS" id="Qf7-i1-xif"/>
+                <outlet property="nameLabel" destination="qGx-ET-vUU" id="dJX-YJ-KUe"/>
+                <outlet property="ratingView" destination="KdM-zM-Aq3" id="MFW-cM-SKk"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="248"/>
+        </collectionViewCell>
+    </objects>
+</document>

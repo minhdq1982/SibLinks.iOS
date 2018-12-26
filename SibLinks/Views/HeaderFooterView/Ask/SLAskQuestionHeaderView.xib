@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Heavy.ttf">
+            <string>Lato-Heavy</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dQy-Th-7LC" customClass="SLAskQuestionHeaderView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w1Q-p9-PYr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                    <subviews>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gux-Rt-JB0">
+                            <rect key="frame" x="3" y="25" width="104" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="BWH-x0-kTb"/>
+                                <constraint firstAttribute="width" constant="104" id="ehR-ad-WSy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="10 mins ago" image="Time">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQp-OH-nwH">
+                            <rect key="frame" x="150" y="27" width="60" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3YD-yL-Ntn"/>
+                                <constraint firstAttribute="width" constant="60" id="QzH-uT-HGh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-of-MdD">
+                            <rect key="frame" x="115" y="27" width="32" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VP-02-usN">
+                            <rect key="frame" x="272" y="27" width="40" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Ucm-Uu-jYh"/>
+                                <constraint firstAttribute="height" constant="21" id="miU-Ha-vNm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erO-D5-1yQ">
+                            <rect key="frame" x="218" y="27" width="51" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Heavy" family="Lato" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="gux-Rt-JB0" firstAttribute="leading" secondItem="w1Q-p9-PYr" secondAttribute="leading" constant="3" id="2ii-7m-uZj"/>
+                        <constraint firstAttribute="trailing" secondItem="5VP-02-usN" secondAttribute="trailing" constant="8" id="498-GG-lxv"/>
+                        <constraint firstItem="lQp-OH-nwH" firstAttribute="centerX" secondItem="w1Q-p9-PYr" secondAttribute="centerX" constant="20" id="5Ea-Xn-4Mp"/>
+                        <constraint firstItem="erO-D5-1yQ" firstAttribute="top" secondItem="5VP-02-usN" secondAttribute="top" id="6kV-9w-iBd"/>
+                        <constraint firstItem="hq5-of-MdD" firstAttribute="height" secondItem="lQp-OH-nwH" secondAttribute="height" id="893-wT-uph"/>
+                        <constraint firstItem="erO-D5-1yQ" firstAttribute="height" secondItem="5VP-02-usN" secondAttribute="height" id="9oK-DS-ckY"/>
+                        <constraint firstItem="gux-Rt-JB0" firstAttribute="centerY" secondItem="w1Q-p9-PYr" secondAttribute="centerY" id="Eym-xH-GfI"/>
+                        <constraint firstItem="hq5-of-MdD" firstAttribute="leading" secondItem="gux-Rt-JB0" secondAttribute="trailing" constant="8" id="Pbg-cJ-PxC"/>
+                        <constraint firstItem="hq5-of-MdD" firstAttribute="top" secondItem="lQp-OH-nwH" secondAttribute="top" id="UuP-jk-4b3"/>
+                        <constraint firstItem="5VP-02-usN" firstAttribute="centerY" secondItem="w1Q-p9-PYr" secondAttribute="centerY" id="V6e-cp-6oF"/>
+                        <constraint firstItem="lQp-OH-nwH" firstAttribute="centerY" secondItem="w1Q-p9-PYr" secondAttribute="centerY" id="Zzd-n6-dZC"/>
+                        <constraint firstItem="erO-D5-1yQ" firstAttribute="leading" secondItem="lQp-OH-nwH" secondAttribute="trailing" constant="8" id="sNA-lE-lx3"/>
+                        <constraint firstItem="5VP-02-usN" firstAttribute="leading" secondItem="erO-D5-1yQ" secondAttribute="trailing" constant="3" id="xg1-LW-43u"/>
+                        <constraint firstItem="lQp-OH-nwH" firstAttribute="leading" secondItem="hq5-of-MdD" secondAttribute="trailing" constant="3" id="zc1-4u-ocV"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bB9-60-G2T" customClass="AnimatableImageView" customModule="IBAnimatable">
+                    <rect key="frame" x="122.5" y="47.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bB9-60-G2T" secondAttribute="height" multiplier="1:1" id="8WX-8U-j0Z"/>
+                        <constraint firstAttribute="width" constant="75" id="qQa-In-DKs"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w1Q-p9-PYr" firstAttribute="top" secondItem="dQy-Th-7LC" secondAttribute="top" id="7hP-nG-wKe"/>
+                <constraint firstItem="w1Q-p9-PYr" firstAttribute="leading" secondItem="dQy-Th-7LC" secondAttribute="leading" id="GLM-uw-FWE"/>
+                <constraint firstItem="bB9-60-G2T" firstAttribute="centerX" secondItem="dQy-Th-7LC" secondAttribute="centerX" id="KHB-qw-FLh"/>
+                <constraint firstAttribute="trailing" secondItem="w1Q-p9-PYr" secondAttribute="trailing" id="Ncl-vK-CGN"/>
+                <constraint firstItem="w1Q-p9-PYr" firstAttribute="height" secondItem="dQy-Th-7LC" secondAttribute="height" multiplier="0.5" id="UoR-Nh-Wmq"/>
+                <constraint firstItem="bB9-60-G2T" firstAttribute="centerY" secondItem="dQy-Th-7LC" secondAttribute="centerY" constant="10" id="Wo9-Fu-FTk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="answerTextLabel" destination="lQp-OH-nwH" id="nhe-fe-i2E"/>
+                <outlet property="answerValueLabel" destination="hq5-of-MdD" id="Ad4-bG-FKe"/>
+                <outlet property="avatarImageView" destination="bB9-60-G2T" id="xza-4f-UGU"/>
+                <outlet property="avatarWidthConstraint" destination="qQa-In-DKs" id="pUl-f8-ZzC"/>
+                <outlet property="timeLabelButton" destination="gux-Rt-JB0" id="u6Y-1F-E6E"/>
+                <outlet property="topView" destination="w1Q-p9-PYr" id="Dvn-Z9-DjT"/>
+                <outlet property="viewTextLabel" destination="5VP-02-usN" id="SKU-0N-M0F"/>
+                <outlet property="viewValueLabel" destination="erO-D5-1yQ" id="mHJ-1G-180"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Time" width="25" height="25"/>
+    </resources>
+</document>

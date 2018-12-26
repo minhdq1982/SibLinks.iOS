@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FKg-ST-blr">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <scenes>
+        <!--Upload Essay View Controller-->
+        <scene sceneID="y0G-bO-tq6">
+            <objects>
+                <viewController storyboardIdentifier="SLUploadEssayViewControllerID" id="FKg-ST-blr" customClass="SLUploadEssayViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mMd-UX-8JV"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6F-iW-gb3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="70X-Ib-1cg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9Q-lB-uFd">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="FKg-ST-blr" id="M8O-7e-ZNq"/>
+                                    <outlet property="delegate" destination="FKg-ST-blr" id="q0Q-f6-DsD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f9Q-lB-uFd" firstAttribute="leading" secondItem="70X-Ib-1cg" secondAttribute="leading" id="66e-k5-Bqt"/>
+                            <constraint firstItem="U6F-iW-gb3" firstAttribute="top" secondItem="f9Q-lB-uFd" secondAttribute="bottom" id="FZ4-s0-5N1"/>
+                            <constraint firstItem="f9Q-lB-uFd" firstAttribute="top" secondItem="70X-Ib-1cg" secondAttribute="top" id="S47-YJ-DdO"/>
+                            <constraint firstAttribute="trailing" secondItem="f9Q-lB-uFd" secondAttribute="trailing" id="s5d-Ib-Ibv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zd4-GN-kPV"/>
+                    <connections>
+                        <outlet property="tableView" destination="f9Q-lB-uFd" id="CvH-dC-lZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzM-DK-ah5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="225"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NotificationNavigationView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0e-yh-pOv">
+                    <rect key="frame" x="64" y="11" width="94.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-3Z-nE3" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="160.5" y="4" width="20" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1k-EQ-15S">
+                            <rect key="frame" x="2" y="2" width="16" height="16"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="r1k-EQ-15S" secondAttribute="bottom" constant="2" id="5QY-7X-66H"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="CXd-Cg-2E8"/>
+                        <constraint firstAttribute="height" constant="20" id="Dfc-mz-hpJ"/>
+                        <constraint firstItem="r1k-EQ-15S" firstAttribute="leading" secondItem="k3H-3Z-nE3" secondAttribute="leading" constant="2" id="YkC-JC-vo1"/>
+                        <constraint firstItem="r1k-EQ-15S" firstAttribute="top" secondItem="k3H-3Z-nE3" secondAttribute="top" constant="2" id="jKC-Co-dHh"/>
+                        <constraint firstAttribute="trailing" secondItem="r1k-EQ-15S" secondAttribute="trailing" constant="2" id="nl2-N0-GCk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k3H-3Z-nE3" firstAttribute="leading" secondItem="t0e-yh-pOv" secondAttribute="trailing" constant="2" id="1Jv-se-5vr"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t0e-yh-pOv" secondAttribute="trailing" constant="40" id="3Ff-hQ-egW"/>
+                <constraint firstItem="t0e-yh-pOv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bhj-x3-hcS"/>
+                <constraint firstItem="k3H-3Z-nE3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Ea1-OC-mvb"/>
+                <constraint firstItem="t0e-yh-pOv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="dsT-8e-Mr8"/>
+                <constraint firstItem="t0e-yh-pOv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zRl-DM-1RH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="valueLabel" destination="r1k-EQ-15S" id="EDw-Dh-XuD"/>
+                <outlet property="valueView" destination="k3H-3Z-nE3" id="Hnc-B8-9jh"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="117"/>
+        </view>
+    </objects>
+</document>

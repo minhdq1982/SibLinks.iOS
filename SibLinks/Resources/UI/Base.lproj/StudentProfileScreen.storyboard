@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Student Profile View Controller-->
+        <scene sceneID="w2u-cF-td7">
+            <objects>
+                <viewController storyboardIdentifier="SLStudentProfileViewControllerID" id="mdL-w7-UBO" customClass="SLStudentProfileViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T61-jY-DpD"/>
+                        <viewControllerLayoutGuide type="bottom" id="rRL-6g-Z3u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZBL-l3-0bN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OF3-8q-bxd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mdL-w7-UBO" id="ska-ZV-FHn"/>
+                                    <outlet property="delegate" destination="mdL-w7-UBO" id="Cat-Wx-b0j"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OF3-8q-bxd" secondAttribute="trailing" id="9t9-cM-ZMA"/>
+                            <constraint firstItem="OF3-8q-bxd" firstAttribute="top" secondItem="ZBL-l3-0bN" secondAttribute="top" id="Hge-o9-zoU"/>
+                            <constraint firstItem="OF3-8q-bxd" firstAttribute="leading" secondItem="ZBL-l3-0bN" secondAttribute="leading" id="piH-Td-v1D"/>
+                            <constraint firstItem="rRL-6g-Z3u" firstAttribute="top" secondItem="OF3-8q-bxd" secondAttribute="bottom" id="uPO-FO-Ok0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OF3-8q-bxd" id="Jwv-ib-aQp"/>
+                        <segue destination="GhC-Ai-PdH" kind="presentation" identifier="kEditStudentProfile" id="Oo7-w6-O7u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLO-KN-Ywi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="421"/>
+        </scene>
+        <!--Edit Student Profile View Controller-->
+        <scene sceneID="82b-Zd-T7X">
+            <objects>
+                <viewController id="GhC-Ai-PdH" customClass="SLEditStudentProfileViewController" customModule="SibLinks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JKc-RG-ptY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lbb-MR-u4W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M1s-h5-HQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F75-BA-fMv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4n-gU-pho">
+                                        <rect key="frame" x="12" y="63" width="351" height="1"/>
+                                        <color key="backgroundColor" red="0.80392156862745101" green="0.83137254901960778" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="a0W-9U-a2H"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMb-6a-p4C">
+                                        <rect key="frame" x="0.0" y="24" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Mu-c0-u7o"/>
+                                            <constraint firstAttribute="width" constant="40" id="SuC-6n-TYs"/>
+                                        </constraints>
+                                        <state key="normal" image="CloseIcon"/>
+                                        <connections>
+                                            <action selector="closeViewControllerAction:" destination="GhC-Ai-PdH" eventType="touchUpInside" id="gs0-Lk-vHV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit my profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqh-bn-Q6t">
+                                        <rect key="frame" x="135" y="34.5" width="105" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="GUx-k3-HQ9"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="OO6-Fr-z0V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="K4n-gU-pho" firstAttribute="leading" secondItem="F75-BA-fMv" secondAttribute="leading" constant="12" id="Cw8-FR-qJq"/>
+                                    <constraint firstAttribute="height" constant="64" id="Fdv-84-fJ3"/>
+                                    <constraint firstItem="Dqh-bn-Q6t" firstAttribute="centerY" secondItem="GMb-6a-p4C" secondAttribute="centerY" id="IYg-4j-8hX"/>
+                                    <constraint firstAttribute="trailing" secondItem="K4n-gU-pho" secondAttribute="trailing" constant="12" id="K2m-Cn-keO"/>
+                                    <constraint firstItem="Dqh-bn-Q6t" firstAttribute="centerX" secondItem="F75-BA-fMv" secondAttribute="centerX" id="L5K-vo-gNX"/>
+                                    <constraint firstAttribute="bottom" secondItem="GMb-6a-p4C" secondAttribute="bottom" id="UsL-gI-fan"/>
+                                    <constraint firstAttribute="bottom" secondItem="K4n-gU-pho" secondAttribute="bottom" id="W8s-2R-SRy"/>
+                                    <constraint firstItem="GMb-6a-p4C" firstAttribute="leading" secondItem="F75-BA-fMv" secondAttribute="leading" id="oeL-qQ-rS4"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COb-9K-zao">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3O1-j0-Z9N">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="519"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="94R-wS-1XE" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                                <rect key="frame" x="150" y="20" width="75" height="75"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="4Hh-fx-p9v"/>
+                                                    <constraint firstAttribute="height" constant="75" id="uL7-ht-3N6"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="maskType" value="Circle"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your avatar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHa-oA-9Ao">
+                                                <rect key="frame" x="136.5" y="105" width="102" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="STw-j1-Jqu"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="f20-EP-fUA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQG-QS-0cu">
+                                                <rect key="frame" x="167.5" y="135" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="hw8-PL-gMx"/>
+                                                    <constraint firstAttribute="height" constant="40" id="o3o-B7-mGR"/>
+                                                </constraints>
+                                                <state key="normal" image="CameraIcon"/>
+                                                <connections>
+                                                    <action selector="changeYourAvatarAction:" destination="GhC-Ai-PdH" eventType="touchUpInside" id="W6S-1U-ifA"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zak-hy-IyT" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="185" width="143.5" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="FwF-na-1I3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Firstname"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="wcM-g4-xll"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tzs-Nu-CZE" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="197.5" y="185" width="143.5" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="8Ie-b4-PQ4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Lastname"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="e3a-el-V1T"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your school" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbT-ub-c9B" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="230" width="307" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="tBs-pF-UKA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="High School"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="013-pe-E5V"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1c-Pd-weM">
+                                                <rect key="frame" x="34" y="230.5" width="307" height="35"/>
+                                                <state key="normal" image="down-arrow-options"/>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select your gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zH8-mY-UIK" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="275" width="307" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="aMD-9h-v5Z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Gender"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="ciT-XO-rcz"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbh-4G-xnS">
+                                                <rect key="frame" x="34" y="275" width="307" height="35"/>
+                                                <state key="normal" image="down-arrow-options"/>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select your birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FkG-kx-B5Z" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="320" width="307" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="QGs-nI-vw6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Birthday"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="zTi-6A-I1Y"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjZ-Co-UXj">
+                                                <rect key="frame" x="34" y="320" width="307" height="35"/>
+                                                <state key="normal" image="down-arrow-options"/>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your favorite subjects" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcC-nV-x0K" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="365" width="307" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="km2-a4-cJm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Favorite subjects"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="YdL-yj-Juv"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSv-ir-mld">
+                                                <rect key="frame" x="34" y="365" width="307" height="35"/>
+                                                <state key="normal" image="down-arrow-options"/>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter about me" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jK0-TW-SgF" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                                <rect key="frame" x="34" y="410" width="307" height="35"/>
+                                                <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ffH-sV-MYg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="About me"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="3DV-qQ-N5x"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEa-Y5-Dz7" customClass="LoadingButton" customModule="SibLinks" customModuleProvider="target">
+                                                <rect key="frame" x="112.5" y="465" width="150" height="34"/>
+                                                <color key="backgroundColor" red="0.1333333333" green="0.34509803919999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="Taj-KI-1OZ"/>
+                                                    <constraint firstAttribute="width" constant="150" id="nLn-1F-VCi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="12"/>
+                                                <state key="normal" title="SAVE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="saveAction:" destination="GhC-Ai-PdH" eventType="touchUpInside" id="JGT-Kw-9U2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jcC-nV-x0K" firstAttribute="trailing" secondItem="qbT-ub-c9B" secondAttribute="trailing" id="0dd-YF-2th"/>
+                                            <constraint firstItem="VHa-oA-9Ao" firstAttribute="top" secondItem="94R-wS-1XE" secondAttribute="bottom" constant="10" id="1t2-tA-Kyh"/>
+                                            <constraint firstItem="Hbh-4G-xnS" firstAttribute="height" secondItem="zH8-mY-UIK" secondAttribute="height" id="2GN-MQ-eay"/>
+                                            <constraint firstItem="FkG-kx-B5Z" firstAttribute="top" secondItem="zH8-mY-UIK" secondAttribute="bottom" constant="10" id="2gD-k1-vt1"/>
+                                            <constraint firstItem="J1c-Pd-weM" firstAttribute="centerX" secondItem="qbT-ub-c9B" secondAttribute="centerX" id="3lf-v7-wVa"/>
+                                            <constraint firstItem="Tzs-Nu-CZE" firstAttribute="leading" secondItem="zak-hy-IyT" secondAttribute="trailing" constant="20" id="3zW-eh-N0Y"/>
+                                            <constraint firstItem="zak-hy-IyT" firstAttribute="leading" secondItem="3O1-j0-Z9N" secondAttribute="leading" constant="34" id="4zG-eE-qfb"/>
+                                            <constraint firstItem="J1c-Pd-weM" firstAttribute="centerY" secondItem="qbT-ub-c9B" secondAttribute="centerY" id="6qi-XI-iWq"/>
+                                            <constraint firstItem="qbT-ub-c9B" firstAttribute="trailing" secondItem="Tzs-Nu-CZE" secondAttribute="trailing" id="8Ui-C8-Nyb"/>
+                                            <constraint firstItem="TSv-ir-mld" firstAttribute="centerY" secondItem="jcC-nV-x0K" secondAttribute="centerY" id="EDe-qi-wwH"/>
+                                            <constraint firstItem="zH8-mY-UIK" firstAttribute="trailing" secondItem="qbT-ub-c9B" secondAttribute="trailing" id="GZd-z0-dc7"/>
+                                            <constraint firstItem="jcC-nV-x0K" firstAttribute="height" secondItem="TSv-ir-mld" secondAttribute="height" id="GxO-m5-BHq"/>
+                                            <constraint firstItem="DjZ-Co-UXj" firstAttribute="centerX" secondItem="FkG-kx-B5Z" secondAttribute="centerX" id="LPO-Rq-zUg"/>
+                                            <constraint firstItem="Tzs-Nu-CZE" firstAttribute="centerY" secondItem="zak-hy-IyT" secondAttribute="centerY" id="M9O-rW-zEW"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="515" id="Mrl-pN-n4I"/>
+                                            <constraint firstItem="jcC-nV-x0K" firstAttribute="leading" secondItem="qbT-ub-c9B" secondAttribute="leading" id="PFP-Ih-Vdp"/>
+                                            <constraint firstItem="jK0-TW-SgF" firstAttribute="top" secondItem="jcC-nV-x0K" secondAttribute="bottom" constant="10" id="Qwg-dz-QG4"/>
+                                            <constraint firstItem="FkG-kx-B5Z" firstAttribute="trailing" secondItem="qbT-ub-c9B" secondAttribute="trailing" id="SCM-jN-myb"/>
+                                            <constraint firstItem="hEa-Y5-Dz7" firstAttribute="centerX" secondItem="3O1-j0-Z9N" secondAttribute="centerX" id="SL4-mz-4UM"/>
+                                            <constraint firstItem="Hbh-4G-xnS" firstAttribute="centerX" secondItem="zH8-mY-UIK" secondAttribute="centerX" id="VhG-RS-HJA"/>
+                                            <constraint firstItem="Tzs-Nu-CZE" firstAttribute="width" secondItem="zak-hy-IyT" secondAttribute="width" id="WFm-cI-vzZ"/>
+                                            <constraint firstItem="hEa-Y5-Dz7" firstAttribute="top" secondItem="jK0-TW-SgF" secondAttribute="bottom" constant="20" id="WYS-Pv-eGV"/>
+                                            <constraint firstItem="VHa-oA-9Ao" firstAttribute="centerX" secondItem="3O1-j0-Z9N" secondAttribute="centerX" id="WfK-oN-UDp"/>
+                                            <constraint firstItem="aQG-QS-0cu" firstAttribute="centerX" secondItem="3O1-j0-Z9N" secondAttribute="centerX" id="Wkf-0A-UQl"/>
+                                            <constraint firstItem="FkG-kx-B5Z" firstAttribute="leading" secondItem="qbT-ub-c9B" secondAttribute="leading" id="Yrr-xd-OO7"/>
+                                            <constraint firstItem="zak-hy-IyT" firstAttribute="top" secondItem="aQG-QS-0cu" secondAttribute="bottom" constant="10" id="ZBz-V4-qHb"/>
+                                            <constraint firstItem="zH8-mY-UIK" firstAttribute="leading" secondItem="qbT-ub-c9B" secondAttribute="leading" id="aKY-ji-gEd"/>
+                                            <constraint firstItem="Hbh-4G-xnS" firstAttribute="width" secondItem="zH8-mY-UIK" secondAttribute="width" id="bE5-ob-RI4"/>
+                                            <constraint firstItem="DjZ-Co-UXj" firstAttribute="height" secondItem="FkG-kx-B5Z" secondAttribute="height" id="bzU-cc-Nbk"/>
+                                            <constraint firstItem="qbT-ub-c9B" firstAttribute="leading" secondItem="zak-hy-IyT" secondAttribute="leading" id="cvR-w6-Tko"/>
+                                            <constraint firstItem="jK0-TW-SgF" firstAttribute="trailing" secondItem="qbT-ub-c9B" secondAttribute="trailing" id="dhM-at-sUa"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tzs-Nu-CZE" secondAttribute="trailing" constant="34" id="e1U-WC-5V5"/>
+                                            <constraint firstItem="TSv-ir-mld" firstAttribute="centerX" secondItem="jcC-nV-x0K" secondAttribute="centerX" id="fQe-YY-atM"/>
+                                            <constraint firstItem="jcC-nV-x0K" firstAttribute="width" secondItem="TSv-ir-mld" secondAttribute="width" id="fpr-zb-uU4"/>
+                                            <constraint firstItem="DjZ-Co-UXj" firstAttribute="centerY" secondItem="FkG-kx-B5Z" secondAttribute="centerY" id="j5e-UM-z2l"/>
+                                            <constraint firstItem="aQG-QS-0cu" firstAttribute="top" secondItem="VHa-oA-9Ao" secondAttribute="bottom" constant="10" id="jzh-e5-51C"/>
+                                            <constraint firstItem="jK0-TW-SgF" firstAttribute="leading" secondItem="qbT-ub-c9B" secondAttribute="leading" id="lof-uN-Vug"/>
+                                            <constraint firstItem="94R-wS-1XE" firstAttribute="top" secondItem="3O1-j0-Z9N" secondAttribute="top" constant="20" id="mwz-UA-Nfh"/>
+                                            <constraint firstItem="zH8-mY-UIK" firstAttribute="top" secondItem="qbT-ub-c9B" secondAttribute="bottom" constant="10" id="pef-We-Dvt"/>
+                                            <constraint firstItem="Hbh-4G-xnS" firstAttribute="centerY" secondItem="zH8-mY-UIK" secondAttribute="centerY" id="qOC-2i-8jc"/>
+                                            <constraint firstItem="J1c-Pd-weM" firstAttribute="width" secondItem="qbT-ub-c9B" secondAttribute="width" id="qo0-zI-Yjj"/>
+                                            <constraint firstItem="94R-wS-1XE" firstAttribute="centerX" secondItem="3O1-j0-Z9N" secondAttribute="centerX" id="sak-MU-Dt4"/>
+                                            <constraint firstItem="J1c-Pd-weM" firstAttribute="height" secondItem="qbT-ub-c9B" secondAttribute="height" id="udr-VW-PmM"/>
+                                            <constraint firstItem="jcC-nV-x0K" firstAttribute="top" secondItem="FkG-kx-B5Z" secondAttribute="bottom" constant="10" id="wW6-OR-0Dv"/>
+                                            <constraint firstItem="DjZ-Co-UXj" firstAttribute="width" secondItem="FkG-kx-B5Z" secondAttribute="width" id="wvV-go-Ggu"/>
+                                            <constraint firstAttribute="bottom" secondItem="hEa-Y5-Dz7" secondAttribute="bottom" constant="20" id="yOb-m3-7gJ"/>
+                                            <constraint firstItem="qbT-ub-c9B" firstAttribute="top" secondItem="Tzs-Nu-CZE" secondAttribute="bottom" constant="10" id="zld-xa-2N0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3O1-j0-Z9N" firstAttribute="top" secondItem="COb-9K-zao" secondAttribute="top" id="4Ej-kc-24M"/>
+                                    <constraint firstAttribute="bottom" secondItem="3O1-j0-Z9N" secondAttribute="bottom" id="66M-w0-a8p"/>
+                                    <constraint firstAttribute="trailing" secondItem="3O1-j0-Z9N" secondAttribute="trailing" id="AlK-Ce-PmI"/>
+                                    <constraint firstItem="3O1-j0-Z9N" firstAttribute="leading" secondItem="COb-9K-zao" secondAttribute="leading" id="J1P-6D-GJ3"/>
+                                    <constraint firstItem="3O1-j0-Z9N" firstAttribute="height" secondItem="COb-9K-zao" secondAttribute="height" priority="750" id="b9y-ev-4zH"/>
+                                    <constraint firstItem="3O1-j0-Z9N" firstAttribute="width" secondItem="COb-9K-zao" secondAttribute="width" id="sxu-xv-3jf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="GhC-Ai-PdH" id="0CV-Xx-aDq"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F75-BA-fMv" firstAttribute="leading" secondItem="M1s-h5-HQ9" secondAttribute="leading" id="88x-sS-Twq"/>
+                            <constraint firstItem="F75-BA-fMv" firstAttribute="top" secondItem="M1s-h5-HQ9" secondAttribute="top" id="E3B-CF-T0M"/>
+                            <constraint firstAttribute="trailing" secondItem="F75-BA-fMv" secondAttribute="trailing" id="KI0-Ts-cAC"/>
+                            <constraint firstItem="COb-9K-zao" firstAttribute="top" secondItem="F75-BA-fMv" secondAttribute="bottom" id="PpW-jp-wme"/>
+                            <constraint firstItem="Lbb-MR-u4W" firstAttribute="top" secondItem="COb-9K-zao" secondAttribute="bottom" id="QWE-ZF-rT2"/>
+                            <constraint firstItem="COb-9K-zao" firstAttribute="leading" secondItem="M1s-h5-HQ9" secondAttribute="leading" id="cJP-KM-t1Y"/>
+                            <constraint firstAttribute="trailing" secondItem="COb-9K-zao" secondAttribute="trailing" id="nOr-7B-NWN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutMeTextField" destination="jK0-TW-SgF" id="pad-eE-2uf"/>
+                        <outlet property="avatarImageView" destination="94R-wS-1XE" id="h4g-8o-FLT"/>
+                        <outlet property="birthdayButton" destination="DjZ-Co-UXj" id="VHi-ch-3qG"/>
+                        <outlet property="birthdayTextField" destination="FkG-kx-B5Z" id="Qch-Kt-yLL"/>
+                        <outlet property="changeAvatarButton" destination="aQG-QS-0cu" id="Tcl-dd-8ZU"/>
+                        <outlet property="favoriteSubjectsButton" destination="TSv-ir-mld" id="F1f-Rq-tLe"/>
+                        <outlet property="favoriteSubjectsTextField" destination="jcC-nV-x0K" id="F9X-26-X4C"/>
+                        <outlet property="firstNameTextField" destination="zak-hy-IyT" id="4Ry-BO-atJ"/>
+                        <outlet property="genderButton" destination="Hbh-4G-xnS" id="sgh-EA-opX"/>
+                        <outlet property="genderTextField" destination="zH8-mY-UIK" id="QVv-ip-fzD"/>
+                        <outlet property="highSchoolButton" destination="J1c-Pd-weM" id="rqn-LF-Qno"/>
+                        <outlet property="highSchoolNameTextField" destination="qbT-ub-c9B" id="gPF-hL-FTq"/>
+                        <outlet property="lastnameNameTextField" destination="Tzs-Nu-CZE" id="R3E-oE-34g"/>
+                        <outlet property="saveButton" destination="hEa-Y5-Dz7" id="Xc7-nx-XkK"/>
+                        <outlet property="scrollView" destination="COb-9K-zao" id="6gi-nH-Bi6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlC-0C-YDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="421"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CameraIcon" width="24" height="20"/>
+        <image name="CloseIcon" width="16" height="14"/>
+        <image name="down-arrow-options" width="6" height="3"/>
+    </resources>
+</document>

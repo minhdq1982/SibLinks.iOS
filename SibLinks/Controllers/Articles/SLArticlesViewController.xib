@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLArticlesViewController" customModule="SibLinks" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="cN6-Mc-9ta" id="hdm-Xz-XVQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-A4-9bl">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmo-1o-T3L">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nPP-0B-Lxn"/>
+                                <constraint firstAttribute="width" constant="40" id="rDc-g7-fU7"/>
+                            </constraints>
+                            <state key="normal" image="CloseIcon"/>
+                            <connections>
+                                <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="5jU-9s-rZo"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffN-r1-WO4">
+                            <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="16"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-9o-kf1">
+                            <color key="backgroundColor" red="0.80392156862745101" green="0.83137254901960778" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="uyD-oY-7HA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="7IV-Mf-lzJ"/>
+                        <constraint firstAttribute="trailing" secondItem="8hb-9o-kf1" secondAttribute="trailing" constant="12" id="8vX-r7-5cj"/>
+                        <constraint firstItem="Wmo-1o-T3L" firstAttribute="leading" secondItem="0KW-A4-9bl" secondAttribute="leading" id="BgT-Bt-mro"/>
+                        <constraint firstItem="ffN-r1-WO4" firstAttribute="centerX" secondItem="0KW-A4-9bl" secondAttribute="centerX" id="CZq-ku-TJx"/>
+                        <constraint firstItem="8hb-9o-kf1" firstAttribute="leading" secondItem="0KW-A4-9bl" secondAttribute="leading" constant="12" id="Jp4-JA-I1Z"/>
+                        <constraint firstAttribute="bottom" secondItem="Wmo-1o-T3L" secondAttribute="bottom" id="WWg-8X-pxe"/>
+                        <constraint firstItem="ffN-r1-WO4" firstAttribute="centerY" secondItem="Wmo-1o-T3L" secondAttribute="centerY" id="cQa-ND-xEF"/>
+                        <constraint firstItem="ffN-r1-WO4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wmo-1o-T3L" secondAttribute="trailing" constant="20" id="ewc-Lo-gF6"/>
+                        <constraint firstAttribute="bottom" secondItem="8hb-9o-kf1" secondAttribute="bottom" id="sXc-iX-fkc"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cN6-Mc-9ta">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0KW-A4-9bl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="C1B-2e-gRJ"/>
+                <constraint firstAttribute="trailing" secondItem="0KW-A4-9bl" secondAttribute="trailing" id="Cec-fz-0MB"/>
+                <constraint firstItem="0KW-A4-9bl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MNJ-sR-LiQ"/>
+                <constraint firstAttribute="bottom" secondItem="cN6-Mc-9ta" secondAttribute="bottom" id="Sa5-Ne-tMu"/>
+                <constraint firstItem="cN6-Mc-9ta" firstAttribute="top" secondItem="0KW-A4-9bl" secondAttribute="bottom" id="cWW-5i-YAY"/>
+                <constraint firstAttribute="trailing" secondItem="cN6-Mc-9ta" secondAttribute="trailing" id="jtn-c8-9pN"/>
+                <constraint firstItem="cN6-Mc-9ta" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kv9-09-i5y"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="CloseIcon" width="16" height="14"/>
+    </resources>
+</document>

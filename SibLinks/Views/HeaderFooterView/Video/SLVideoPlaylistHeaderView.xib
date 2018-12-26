@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RXd-A8-RrW" customClass="SLVideoPlaylistHeaderView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TjU-Sz-6Qm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to learn Math!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKa-6m-TPv">
+                            <rect key="frame" x="8" y="12" width="221" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="JUS-1G-eoY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100/100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwN-1I-dqP">
+                            <rect key="frame" x="237" y="12" width="60" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="3SR-rV-1ZE"/>
+                                <constraint firstAttribute="height" constant="21" id="KaE-aP-FfE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DropDownArrow" translatesAutoresizingMaskIntoConstraints="NO" id="3VF-bt-5ps">
+                            <rect key="frame" x="305" y="20" width="7" height="5"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="CoU-z9-eS1"/>
+                                <constraint firstAttribute="width" constant="7" id="EQZ-uL-m9L"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-aR-LPM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <connections>
+                                <action selector="toogleChangeHeader:" destination="RXd-A8-RrW" eventType="touchUpInside" id="ImP-9f-W0M"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cNl-aR-LPM" firstAttribute="leading" secondItem="TjU-Sz-6Qm" secondAttribute="leading" id="1LM-it-0Kq"/>
+                        <constraint firstItem="3VF-bt-5ps" firstAttribute="leading" secondItem="DwN-1I-dqP" secondAttribute="trailing" constant="8" id="Gb1-sg-7y9"/>
+                        <constraint firstAttribute="trailing" secondItem="3VF-bt-5ps" secondAttribute="trailing" constant="8" id="Isn-a8-bum"/>
+                        <constraint firstItem="DwN-1I-dqP" firstAttribute="leading" secondItem="HKa-6m-TPv" secondAttribute="trailing" constant="8" id="KAr-RO-565"/>
+                        <constraint firstAttribute="trailing" secondItem="cNl-aR-LPM" secondAttribute="trailing" id="ULa-0I-kwS"/>
+                        <constraint firstItem="cNl-aR-LPM" firstAttribute="top" secondItem="TjU-Sz-6Qm" secondAttribute="top" id="dlb-70-mmq"/>
+                        <constraint firstItem="HKa-6m-TPv" firstAttribute="leading" secondItem="TjU-Sz-6Qm" secondAttribute="leading" constant="8" id="krJ-Eh-v8l"/>
+                        <constraint firstAttribute="height" constant="44" id="qDu-jR-up9"/>
+                        <constraint firstItem="3VF-bt-5ps" firstAttribute="centerY" secondItem="TjU-Sz-6Qm" secondAttribute="centerY" id="r4h-qG-teQ"/>
+                        <constraint firstAttribute="bottom" secondItem="cNl-aR-LPM" secondAttribute="bottom" id="rmi-ni-b0f"/>
+                        <constraint firstItem="HKa-6m-TPv" firstAttribute="centerY" secondItem="TjU-Sz-6Qm" secondAttribute="centerY" id="uJ9-sw-Ou0"/>
+                        <constraint firstItem="DwN-1I-dqP" firstAttribute="centerY" secondItem="TjU-Sz-6Qm" secondAttribute="centerY" id="xqh-Fr-2Xs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="La6-wz-5Ve">
+                    <rect key="frame" x="0.0" y="44" width="320" height="0.0"/>
+                    <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="La6-wz-5Ve" firstAttribute="top" secondItem="TjU-Sz-6Qm" secondAttribute="bottom" id="3aM-N1-jhr"/>
+                <constraint firstItem="TjU-Sz-6Qm" firstAttribute="leading" secondItem="RXd-A8-RrW" secondAttribute="leading" id="Hy7-P1-fEE"/>
+                <constraint firstAttribute="trailing" secondItem="La6-wz-5Ve" secondAttribute="trailing" id="I8g-Vx-gCS"/>
+                <constraint firstItem="La6-wz-5Ve" firstAttribute="leading" secondItem="RXd-A8-RrW" secondAttribute="leading" id="IOY-xP-j2u"/>
+                <constraint firstAttribute="bottom" secondItem="La6-wz-5Ve" secondAttribute="bottom" id="LaN-eb-5uE"/>
+                <constraint firstAttribute="trailing" secondItem="TjU-Sz-6Qm" secondAttribute="trailing" id="dFt-dc-Ors"/>
+                <constraint firstItem="TjU-Sz-6Qm" firstAttribute="top" secondItem="RXd-A8-RrW" secondAttribute="top" id="rTq-MO-uaK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="3VF-bt-5ps" id="RzP-zs-rXM"/>
+                <outlet property="containerView" destination="La6-wz-5Ve" id="pF6-tX-TDR"/>
+                <outlet property="playlistLabel" destination="HKa-6m-TPv" id="QvV-aT-YUU"/>
+                <outlet property="totalVideoLabel" destination="DwN-1I-dqP" id="SXC-0I-eLg"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DropDownArrow" width="7" height="5"/>
+    </resources>
+</document>

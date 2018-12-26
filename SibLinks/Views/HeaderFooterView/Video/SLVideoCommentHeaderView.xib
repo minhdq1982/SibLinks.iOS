@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SfV-lX-bF7" customClass="SLVideoCommentHeaderView" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlU-Kp-MKe" customClass="AnimatableView" customModule="IBAnimatable">
+                    <rect key="frame" x="8" y="8" width="329" height="44"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add your comment..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxI-z0-Dv6">
+                            <rect key="frame" x="20" y="14" width="139" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix6-xH-WtY">
+                            <rect key="frame" x="-8" y="-8" width="345" height="60"/>
+                            <connections>
+                                <action selector="addcomment:" destination="SfV-lX-bF7" eventType="touchUpInside" id="Wxq-YK-7Qg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="kxI-z0-Dv6" firstAttribute="leading" secondItem="jlU-Kp-MKe" secondAttribute="leading" constant="20" id="1Au-sS-OZX"/>
+                        <constraint firstAttribute="bottom" secondItem="Ix6-xH-WtY" secondAttribute="bottom" constant="-8" id="7SB-ID-VXu"/>
+                        <constraint firstItem="Ix6-xH-WtY" firstAttribute="top" secondItem="jlU-Kp-MKe" secondAttribute="top" constant="-8" id="A5p-Rs-ZKc"/>
+                        <constraint firstAttribute="trailing" secondItem="Ix6-xH-WtY" secondAttribute="trailing" constant="-8" id="Hvs-Rs-tXW"/>
+                        <constraint firstItem="kxI-z0-Dv6" firstAttribute="centerY" secondItem="jlU-Kp-MKe" secondAttribute="centerY" id="TIM-No-CBi"/>
+                        <constraint firstItem="Ix6-xH-WtY" firstAttribute="leading" secondItem="jlU-Kp-MKe" secondAttribute="leading" constant="-8" id="VYW-q2-dpC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="0.96078431369999995" green="0.97254901959999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jlU-Kp-MKe" firstAttribute="leading" secondItem="SfV-lX-bF7" secondAttribute="leading" constant="8" id="INP-SP-BOZ"/>
+                <constraint firstAttribute="bottom" secondItem="jlU-Kp-MKe" secondAttribute="bottom" constant="8" id="b19-RX-pvB"/>
+                <constraint firstItem="jlU-Kp-MKe" firstAttribute="top" secondItem="SfV-lX-bF7" secondAttribute="top" constant="8" id="dg4-97-RzL"/>
+                <constraint firstAttribute="trailing" secondItem="jlU-Kp-MKe" secondAttribute="trailing" constant="8" id="kj3-bY-5Du"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButton" destination="Ix6-xH-WtY" id="Kwa-Nd-CeW"/>
+                <outlet property="editTextField" destination="kxI-z0-Dv6" id="qim-pj-e4R"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="311"/>
+        </view>
+    </objects>
+</document>

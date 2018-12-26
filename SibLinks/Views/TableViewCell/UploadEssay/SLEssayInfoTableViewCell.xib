@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SLEssayInfoTableViewCell" rowHeight="245" id="KGk-i7-Jjw" customClass="SLEssayInfoTableViewCell" customModule="SibLinks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="244"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Essay title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="owa-sX-nge" customClass="AnimatableTextField" customModule="IBAnimatable">
+                        <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="RuD-5a-rzd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apply to University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L61-bB-fcP">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="fxN-mk-RXk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="10"/>
+                        <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose University" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyt-jY-2YY" customClass="AnimatableTextField" customModule="IBAnimatable">
+                        <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="3ex-hk-dcR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose Faculty" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4s-gY-5Tk" customClass="AnimatableTextField" customModule="IBAnimatable">
+                        <color key="tintColor" red="0.95294117649999999" green="0.76470588240000004" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="borderSide" value="Bottom"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKd-hA-q2g">
+                        <state key="normal" image="down-arrow-options"/>
+                        <connections>
+                            <action selector="chooseUniversityAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zHf-ix-gyH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znV-Qo-wuv">
+                        <state key="normal" image="down-arrow-options"/>
+                        <connections>
+                            <action selector="chooseFalcultyAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NF6-tw-kRR"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoG-FY-8bs" customClass="AnimatableView" customModule="IBAnimatable">
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="56Q-1q-Jx3" customClass="SLPlaceholderTextView" customModule="SibLinks" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="VS2-oj-WsY"/>
+                                </constraints>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Say something about your essay"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="56Q-1q-Jx3" secondAttribute="trailing" constant="5" id="1eF-Hg-RUQ"/>
+                            <constraint firstItem="56Q-1q-Jx3" firstAttribute="leading" secondItem="OoG-FY-8bs" secondAttribute="leading" constant="5" id="Ocw-Zv-fyQ"/>
+                            <constraint firstItem="56Q-1q-Jx3" firstAttribute="top" secondItem="OoG-FY-8bs" secondAttribute="top" constant="1" id="W8g-tq-fJV"/>
+                            <constraint firstAttribute="bottom" secondItem="56Q-1q-Jx3" secondAttribute="bottom" constant="1" id="uvx-1U-OTV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.87450980392156863" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E97-hH-y7g">
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8V1-lq-mBs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="znV-Qo-wuv" firstAttribute="width" secondItem="w4s-gY-5Tk" secondAttribute="width" id="21n-hJ-VII"/>
+                    <constraint firstItem="VKd-hA-q2g" firstAttribute="centerY" secondItem="jyt-jY-2YY" secondAttribute="centerY" id="2EL-uw-P6s"/>
+                    <constraint firstItem="E97-hH-y7g" firstAttribute="top" secondItem="OoG-FY-8bs" secondAttribute="bottom" constant="10" id="2P9-zX-Yxy"/>
+                    <constraint firstItem="znV-Qo-wuv" firstAttribute="height" secondItem="w4s-gY-5Tk" secondAttribute="height" id="2TK-KZ-jNY"/>
+                    <constraint firstItem="L61-bB-fcP" firstAttribute="top" secondItem="owa-sX-nge" secondAttribute="bottom" constant="10" id="336-jL-suh"/>
+                    <constraint firstItem="OoG-FY-8bs" firstAttribute="trailing" secondItem="owa-sX-nge" secondAttribute="trailing" id="DbY-BY-zpT"/>
+                    <constraint firstItem="L61-bB-fcP" firstAttribute="leading" secondItem="owa-sX-nge" secondAttribute="leading" id="Ekf-5L-FHX"/>
+                    <constraint firstItem="VKd-hA-q2g" firstAttribute="width" secondItem="jyt-jY-2YY" secondAttribute="width" id="P5F-aY-Ouu"/>
+                    <constraint firstItem="w4s-gY-5Tk" firstAttribute="centerY" secondItem="jyt-jY-2YY" secondAttribute="centerY" id="Q05-lp-LPP"/>
+                    <constraint firstItem="w4s-gY-5Tk" firstAttribute="width" secondItem="jyt-jY-2YY" secondAttribute="width" id="QtA-pj-ObB"/>
+                    <constraint firstItem="VKd-hA-q2g" firstAttribute="height" secondItem="jyt-jY-2YY" secondAttribute="height" id="R2E-kR-qU6"/>
+                    <constraint firstAttribute="trailing" secondItem="E97-hH-y7g" secondAttribute="trailing" id="Rp7-Wx-deZ"/>
+                    <constraint firstItem="OoG-FY-8bs" firstAttribute="leading" secondItem="owa-sX-nge" secondAttribute="leading" id="bvq-u8-LYJ"/>
+                    <constraint firstAttribute="trailing" secondItem="owa-sX-nge" secondAttribute="trailing" constant="20" id="cX3-CG-dFR"/>
+                    <constraint firstItem="jyt-jY-2YY" firstAttribute="leading" secondItem="owa-sX-nge" secondAttribute="leading" id="gls-jD-2En"/>
+                    <constraint firstItem="w4s-gY-5Tk" firstAttribute="trailing" secondItem="owa-sX-nge" secondAttribute="trailing" id="hUy-Xf-GzH"/>
+                    <constraint firstItem="w4s-gY-5Tk" firstAttribute="leading" secondItem="jyt-jY-2YY" secondAttribute="trailing" constant="30" id="iFN-OK-TnP"/>
+                    <constraint firstItem="E97-hH-y7g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iry-1d-vsU"/>
+                    <constraint firstItem="owa-sX-nge" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jVR-hi-Zfi"/>
+                    <constraint firstItem="znV-Qo-wuv" firstAttribute="centerX" secondItem="w4s-gY-5Tk" secondAttribute="centerX" id="jv7-g1-nis"/>
+                    <constraint firstItem="znV-Qo-wuv" firstAttribute="centerY" secondItem="w4s-gY-5Tk" secondAttribute="centerY" id="kCw-jF-MxH"/>
+                    <constraint firstItem="L61-bB-fcP" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="owa-sX-nge" secondAttribute="trailing" id="m5p-x2-Azz"/>
+                    <constraint firstItem="OoG-FY-8bs" firstAttribute="top" secondItem="znV-Qo-wuv" secondAttribute="bottom" constant="10" id="nC8-G5-FdS"/>
+                    <constraint firstItem="w4s-gY-5Tk" firstAttribute="height" secondItem="jyt-jY-2YY" secondAttribute="height" id="ueD-rq-rno"/>
+                    <constraint firstItem="jyt-jY-2YY" firstAttribute="top" secondItem="L61-bB-fcP" secondAttribute="bottom" constant="5" id="vfH-EL-ebc"/>
+                    <constraint firstAttribute="bottom" secondItem="E97-hH-y7g" secondAttribute="bottom" id="vxX-t9-H3F"/>
+                    <constraint firstItem="owa-sX-nge" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="wPE-SM-Ieg"/>
+                    <constraint firstItem="VKd-hA-q2g" firstAttribute="centerX" secondItem="jyt-jY-2YY" secondAttribute="centerX" id="xYe-Ju-e8t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseFalcultyButton" destination="znV-Qo-wuv" id="Wmt-Cw-RZi"/>
+                <outlet property="chooseUniversityButton" destination="VKd-hA-q2g" id="gwS-q5-0nf"/>
+                <outlet property="essayContentTextView" destination="56Q-1q-Jx3" id="IcX-S7-D1U"/>
+                <outlet property="essayTitleTextField" destination="owa-sX-nge" id="8Cn-wQ-Zrs"/>
+                <outlet property="fucultyTextField" destination="w4s-gY-5Tk" id="F9D-XQ-l0o"/>
+                <outlet property="universityTextField" destination="jyt-jY-2YY" id="3xl-Lz-jfy"/>
+            </connections>
+            <point key="canvasLocation" x="234" y="345.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down-arrow-options" width="6" height="3"/>
+    </resources>
+</document>
